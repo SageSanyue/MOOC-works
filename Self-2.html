@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>座右铭</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-family:"微软雅黑";
+            font-size:18px;
+            color:#000;
+        }
+        #header {
+            height:50px;
+            background:#0CF;
+            text-align:center;
+            font-size:28px;
+            font-family:"华文宋体" ;
+            font-weight: bold;
+            color:#000000;
+        }
+        #container {
+            overflow:auto;			/*溢出自动延展*/
+        }
+        #mainBox {
+            float:left;
+            width:100%;
+            background:#6FF;
+            height:1000px;
+            text-align:center;
+        }
+        #content {
+            height:1000px;
+            background:#FF0;
+            margin:0 210px 0 210px;		/*右外边距空白210px，左外边距空白310px*/
+        }
+        #submainBox {
+            float:left;
+            height:1000px;
+            background:#C63;
+            width:100px;
+            margin-left:-91%;   /*使用负边距的元素可以将其他容器“吸引”到身边*/
+        }
+        #sideBox {
+            float:left;
+            height:1000px;
+            width:130px;
+            margin-left:-210px;   /*使用负边距的元素可以将其他容器“吸引”到身边*/
+            background:#C63;
+        }
+        #footer {
+            clear:both;
+            height:50px;
+            background:#3CF;
+            text-align:center;
+        }
+    </style>
+
+</head>
+<body>
+<SCRIPT language=javascript>
+    function click() {if (event.button==2) {alert('图片禁止下载！');}}document.onmousedown=click
+</SCRIPT>
+<div id="header">我的喜欢</div>
+<div id="container">
+    <div id="mainBox">
+        <div id="content">My Favorite<br/><img src="https://i.loli.net/2018/01/10/5a54e8e6c0a29.jpg"; width="500px";height="400px"><br/>“ 我从来不相信什么懒洋洋的自由，我向往的自由是通过勤奋和努力实现的更广阔的人生，那样的自由才是珍贵的、有价值的；我相信一万小时定律，我从来不相信天上掉馅饼的灵感和坐等的成就。做一个自由又自律的人，靠势必实现的决心认真地活着。”—— 山本耀司 </div>
+    </div>
+    <div id="submainBox">推荐歌曲<br/><a href="http://music.163.com/#/song?id=5208302&market=baiduqk" title="Thank you">Thank You</a></div>
+    <div id="sideBox">必听<br/><a  href="http://www.xiami.com/song/1771498209"  title="">Freedom</a></div>
+</div>
+<div id="footer">Copyright:Saijun</div>
+
+</body>
+</html>
