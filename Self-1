@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-family:"微软雅黑";
+            font-size:18px;
+            color:#000;
+        }
+        #header {
+            height:50px;
+            background:#0CF;
+            text-align:center;
+            font-size:28px;
+            font-family:"华文宋体" ;
+            font-weight: bold;
+            color:#000000;
+        }
+        #container {
+            overflow:auto;			/*溢出自动延展*/
+        }
+        #mainBox {
+            float:left;
+            width:100%;
+            background:#6FF;
+            height:1000px;
+            text-align:center;
+        }
+        #content {
+            height:1000px;
+            background:#fff2e3;
+            margin:0 210px 0 210px;		/*右外边距空白210px，左外边距空白310px*/
+        }
+        #submainBox {
+            float:left;
+            height:1000px;
+            background:#72b890;
+            border-radius: 3px;;
+            width:100px;
+            margin-left:-91%;   /*使用负边距的元素可以将其他容器“吸引”到身边*/
+        }
+        #sideBox {
+            float:left;
+            height:1000px;
+            width:130px;
+            margin-left:-210px;   /*使用负边距的元素可以将其他容器“吸引”到身边*/
+            background:#72b890;
+        }
+        #footer {
+            clear:both;
+            height:50px;
+            background:#3CF;
+            text-align:center;
+        }
+    </style>
+
+</head>
+<body>
+<SCRIPT language=javascript>
+    function click() {if (event.button==2) {alert('图片禁止下载！');}}document.onmousedown=click
+</SCRIPT>
+<div id="header">我的生活照</div>
+<div id="container">
+    <div id="mainBox">
+        <div id="content">My Photos<br/>
+            <img src="https://i.loli.net/2018/01/09/5a54de3556c29.jpg"; width="190px";height="220px"; align="left">
+            <img src="https://i.loli.net/2018/01/09/5a54dd95d4155.jpg"; width="190px";height="220px"; align="center">
+            <img src="https://i.loli.net/2018/01/09/5a54df41edb1a.png"; width="150px";height="200px"; align="right">
+            <br/>
+            <img src="https://i.loli.net/2018/01/09/5a54de962b1de.jpg"; width="190px";height="220px"; align="left">
+            <img src="https://i.loli.net/2018/01/09/5a54dcc7a477f.jpg"; width="190px";height="220px"; align="center">
+            <img src="https://i.loli.net/2018/01/09/5a54df8b4cdd6.jpg"; width="190px";height="220px"; align="right">
+        </div>
+    </div>
+    <div id="submainBox">2016年</div>
+    <div id="sideBox">2017年</div>
+</div>
+<div id="footer">Copyright:Saijun</div>
+
+</body>
+</html>
