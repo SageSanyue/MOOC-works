@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3兴趣爱好</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-family:"微软雅黑";
+            font-size:18px;
+            color:#000;
+        }
+        #header {
+            height:50px;
+            background:#0CF;
+            text-align:center;
+            font-size:28px;
+            font-family:"华文宋体" ;
+            font-weight: bold;
+            color:#000000;
+        }
+        #container {
+            overflow:auto;			/*溢出自动延展*/
+        }
+        #mainBox {
+            float:left;
+            width:100%;
+            background:#6FF;
+            height:1000px;
+            text-align:center;
+        }
+        #content {
+            height:1000px;
+            background:#eeeeee;
+            margin:0 210px 0 210px;		/*右外边距空白210px，左外边距空白310px*/
+        }
+        #submainBox {
+            float:left;
+            height:1000px;
+            background:#ffdee0;
+            width:100px;
+            margin-left:-91%;   /*使用负边距的元素可以将其他容器“吸引”到身边*/
+        }
+        #sideBox {
+            float:left;
+            height:1000px;
+            width:130px;
+            margin-left:-210px;   /*使用负边距的元素可以将其他容器“吸引”到身边*/
+            background:#CC99FF;
+        }
+        #footer {
+            clear:both;
+            height:50px;
+            background:#3CF;
+            text-align:center;
+        }
+    </style>
+
+</head>
+<body>
+<SCRIPT language=javascript>
+    function click() {if (event.button==2) {alert('图片禁止下载！');}}document.onmousedown=click
+</SCRIPT>
+<div id="header">兴趣爱好</div>
+<div id="container">
+    <div id="mainBox">
+        <div id="content">My Favorite<br/><img src="https://i.loli.net/2018/01/10/5a54e8b294ae2.jpg"; width="500px";height="400px"> </div>
+    </div>
+    <div id="submainBox">爱好歌曲<br/><a href="http://music.163.com/#/song?id=5208302&market=baiduqk" title="Thank you">Thank You</a><br/><a  href="http://www.xiami.com/song/1771498209"  title="">Freedom</a></div>
+    <div id="sideBox">喜欢花草<br/>爱好美术<br/></div>
+</div>
+<div id="footer">Copyright:Saijun</div>
+
+</body>
+</html>
